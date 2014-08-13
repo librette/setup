@@ -1,0 +1,29 @@
+{
+	"name": "librette/setup",
+	"keywords": ["nette", "librette", "di"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "David Matějka",
+			"homepage": "http://www.matej21.cz"
+		}
+	],
+	"require": {
+		"nette/di": "~2.2@dev",
+		"nette/utils": "~2.2@dev",
+		"nette/reflection": "~2.2@dev"
+	},
+	"require-dev": {
+		"nette/bootstrap": "~2.2@dev",
+		"nette/neon": "~2.2@dev",
+		"nette/php-generator": "~2.2@dev",
+		"nette/tester": "@dev",
+		"tracy/tracy": "~2.2@dev",
+		"mockery/mockery": "@stable"
+	},
+	"autoload": {
+		"psr-4": {
+			"Librette\\Setup\\": "src/"
+		}
+	}
+}

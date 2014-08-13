@@ -1,0 +1,16 @@
+extensions:
+	setup: Librette\Setup\SetupExtension
+
+services:
+	bar:
+		class: LibretteTests\Setup\Bar
+		autowired: false
+	foo: LibretteTests\Setup\Foo
+	lorem: LibretteTests\Setup\Lorem
+setup:
+	-
+		type: [LibretteTests\Setup\Foo]
+		inject: true
+		setup:
+			- setFoo(@foo)
+		tags: ['xx', 'yy']
