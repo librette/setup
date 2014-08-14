@@ -3,5 +3,5 @@ tests/**/*.actual
 tests/**/*.expected
 tests/**/coverage.*
 composer.lock
-tests/tmp
+tests/tmp/*
 !.gitkeep
