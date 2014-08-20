@@ -1,6 +1,7 @@
 <?php
 namespace Librette\Setup;
 
+use Nette\DI\Compiler;
 use Nette\DI\CompilerExtension;
 use Nette\DI\ServiceDefinition;
 use Nette\Reflection;
@@ -120,6 +121,6 @@ class SetupExtension extends CompilerExtension
 			}, (array) $target['type']);
 		}
 
-		return $targets;
+		return Compiler::filterArguments($targets);
 	}
 }
